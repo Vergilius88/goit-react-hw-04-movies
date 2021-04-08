@@ -1,0 +1,18 @@
+.DetailsPage{
+    display: flex;
+    padding: 20px 0;
+}
+.DetailsPageAbout{
+    padding: 30px;
+}
+.AdditionalInformation{
+    padding: 20px 0 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.AdditionalInformationList{
+    display: flex;
+}
+.AdditionalInformationItem{
+    padding: 30px;
+}

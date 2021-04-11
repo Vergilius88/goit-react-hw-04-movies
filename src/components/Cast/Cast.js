@@ -29,7 +29,9 @@ export default class Cast extends Component {
           <ul>
             {cast.map((item) => (
               <li key={item.id} className="CastPageItem">
-                <img src={`${movieApi.imgPath}${item.profile_path}`} alt="" />
+                {item.profile_path && (
+                  <img src={`${movieApi.imgPath}${item.profile_path}`} alt="" />
+                )}
                 <h4>{item.original_name}</h4>
                 <p>Character: {item.character} </p>
               </li>
@@ -39,7 +41,7 @@ export default class Cast extends Component {
       );
     }
     if (cast.length === 0) {
-      return <h2>No data found</h2>;
+      return <h2>Information about the cast in this film was not found</h2>;
     }
   }
 }

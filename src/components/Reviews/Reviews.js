@@ -36,7 +36,7 @@ export default class Reviews extends Component {
       );
     }
     if (reviews.length === 0) {
-      return <h2>No data found</h2>;
+      return <h2>No reviews found for this movie</h2>;
     }
   }
 }
